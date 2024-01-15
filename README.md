@@ -30,6 +30,14 @@ docker build -t express-app .
 docker run -dp 3000:3000 express-app
 ```
 
+### Cloudbuild
+1. Create a service account that has permissions on Cloud Build, Compute & Artifact Registry.
+2. Push the code to a GCP Code Source repo.
+3. In Artifact Registry, create a Docker repo.
+4. Copy the image tag & push location in the cloudbuild file.
+5. Create a private pool in Cloud build.
+6. Create a trigger in Cloud build. 
+
 ## Author
 
 👤 **Javel Rowe**
